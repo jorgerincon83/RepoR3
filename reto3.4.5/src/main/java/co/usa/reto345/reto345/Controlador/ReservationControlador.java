@@ -16,33 +16,36 @@ public class ReservationControlador {
 
     @Autowired
     private ReservationServicio reservationService;
-    @GetMapping("/all")
-    public List<Reservation> getReservation(){
-        return reservationService.getAll();
+
+    public ReservationControlador() {
     }
 
-    @GetMapping("/{id}")
-    public Optional<Reservation> getReservation(@PathVariable("id") int reservationId) {
-        return reservationService.getReservation(reservationId);
+    @GetMapping({"/all"})
+    public List<Reservation> getAll() {
+        return this.reservationService.getAll();
     }
 
-    @PostMapping("/save")
+    @GetMapping({"/{id}"})
+    public Optional<Reservation> getAdmin(@PathVariable("id") int id) {
+        return this.reservationService.getReservation(id);
+    }
+
+    @PostMapping({"/save"})
     @ResponseStatus(HttpStatus.CREATED)
     public Reservation save(@RequestBody Reservation reservation) {
-        return reservationService.save(reservation);
+        return this.reservationService.save(reservation);
     }
 
-    @PutMapping("/update")
+    @PutMapping({"/update"})
     @ResponseStatus(HttpStatus.CREATED)
     public Reservation update(@RequestBody Reservation reservation) {
-        return reservationService.update(reservation);
+        return this.reservationService.update(reservation);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping({"/{id}"})
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public boolean delete(@PathVariable("id") int id){
-
-        return reservationService.deleteReservation(id);
+    public void delete(@PathVariable("id") Integer id) {
+        this.reservationService.deleteReservation(id);
     }
 
 }
