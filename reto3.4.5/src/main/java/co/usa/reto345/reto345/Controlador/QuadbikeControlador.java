@@ -1,4 +1,4 @@
-package Controlador;
+package co.usa.reto345.reto345.Controlador;
 
 import co.usa.reto345.reto345.modelo.Quadbike;
 import co.usa.reto345.reto345.service.QuadbikeServicio;
