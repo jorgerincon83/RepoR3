@@ -34,28 +34,23 @@ public class ReservationServicio {
         }
     }
 
-    public Reservation update(Reservation reservation){
-        if(reservation.getIdReservation()!=null){
-            Optional<Reservation> e= reservationRepository.getReservation(reservation.getIdReservation());
-            if(!e.isEmpty()){
+    public Reservation update(Reservation reservation) {
+        if (reservation.getIdReservation() != null) {
+            Optional<Reservation> reservationFound = this.reservationRepository.getReservation(reservation.getIdReservation());
+            if (!reservationFound.isEmpty()) {
+                if (reservation.getStartDate() != null) {
+                    ((Reservation)reservationFound.get()).setStartDate(reservation.getStartDate());
+                }
 
-                if(reservation.getStartDate()!=null){
-                    e.get().setStartDate(reservation.getStartDate());
+                if (reservation.getDevolutionDate() != null) {
+                    ((Reservation)reservationFound.get()).setDevolutionDate(reservation.getDevolutionDate());
                 }
-                if(reservation.getDevolutionDate()!=null){
-                    e.get().setDevolutionDate(reservation.getDevolutionDate());
-                }
-                if(reservation.getStatus()!=null){
-                    e.get().setStatus(reservation.getStatus());
-                }
-                reservationRepository.save(e.get());
-                return e.get();
-            }else{
-                return reservation;
+
+                return this.reservationRepository.save((Reservation)reservationFound.get());
             }
-        }else{
-            return reservation;
         }
+
+        return reservation;
     }
 
 

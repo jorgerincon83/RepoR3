@@ -9,12 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8d019a24-5009-4151-a9a5-acaa4be41a37" name="Changes" comment="subida">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto3.4.5/src/main/java/co/usa/reto345/reto345/modelo/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/reto3.4.5/src/main/java/co/usa/reto345/reto345/modelo/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto3.4.5/src/main/java/co/usa/reto345/reto345/modelo/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/reto3.4.5/src/main/java/co/usa/reto345/reto345/modelo/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto3.4.5/target/classes/Controlador/CategoryControlador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto3.4.5/target/classes/Controlador/ClientControlador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto3.4.5/target/classes/Controlador/MessageControlador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto3.4.5/target/classes/Controlador/QuadbikeControlador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reto3.4.5/target/classes/co/usa/reto345/reto345/service/ReservationService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +74,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Ing_Jorge_Rincon/Desktop/RepoR3",
+    "last_opened_file_path": "C:/Users/Ing_Jorge_Rincon/Desktop/reto3V1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -130,7 +125,7 @@
       <workItem from="1665506941353" duration="33197000" />
       <workItem from="1665768310942" duration="5590000" />
       <workItem from="1665788770377" duration="10995000" />
-      <workItem from="1665850536643" duration="3164000" />
+      <workItem from="1665850536643" duration="3954000" />
     </task>
     <task id="LOCAL-00001" summary="subida">
       <created>1665802810166</created>
@@ -146,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665853553620</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="subida">
+      <created>1665854922354</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665854922354</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
