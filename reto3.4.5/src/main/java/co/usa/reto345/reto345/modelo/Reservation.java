@@ -22,7 +22,7 @@ public class Reservation  {
     private String status="created";
 
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "QuadbikeId")
     @JsonIgnoreProperties("reservations")
     private Quadbike quadbike;
 
@@ -93,4 +93,5 @@ public class Reservation  {
     public void setQuadbike(Quadbike quadbike) {
         this.quadbike = quadbike;
     }
+
 }
