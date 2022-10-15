@@ -45,7 +45,7 @@ public class Message {
         return quadbike;
     }
 
-    public void setMachine(Quadbike machine) {
+    public void setQuadbike(Quadbike machine) {
         this.quadbike = machine;
     }
 

@@ -90,6 +90,7 @@ public class Reservation  {
     }
 
 
-
-
+    public void setQuadbike(Quadbike quadbike) {
+        this.quadbike = quadbike;
+    }
 }
